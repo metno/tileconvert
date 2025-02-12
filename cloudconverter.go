@@ -60,7 +60,7 @@ func asPercent(c color.Color) float64 {
 	// The reason we right-shift by eigth is that the color is alpha-premultiplied,
 	// and we know that alpha is 255.
 	// This is specific to the golang standard library.
-	// See https://pkg.go.dev/image/color#Color for more about info.
+	// See https://pkg.go.dev/image/color#Color for more info about this.
 	return float64(r>>8) / 2
 }
 
